@@ -1,0 +1,3 @@
+[submodule "exercism"]
+	path = exercism
+	url = git@github.com:BLooDBRothER/exercism.git
