@@ -3,7 +3,6 @@
 .idea
 HELP.md
 HINTS.md
-README.md
 .vscode/
 bin/
 !**/src/main/**/bin/
@@ -11,3 +10,4 @@ bin/
 build/
 gradlew*
 gradle/
+node_modules/
