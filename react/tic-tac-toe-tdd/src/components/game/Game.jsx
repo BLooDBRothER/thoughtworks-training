@@ -65,11 +65,11 @@ const Game = () => {
     <div className='flex flex-col items-center justify-center gap-4'>
       <div className='flex items-center justify-center gap-4 text-xl'>
         <div>Turn-: </div>
-        <div className={`px-2 py-1 ${turn === "X" ? 'bg-slate-500' : ''}`}>X</div>
-        <div className={`px-2 py-1 ${turn === "O" ? 'bg-slate-500' : ''}`}>O</div>
+        <div className={`px-2 py-1 ${turn === "X" ? 'bg-slate-500' : ''}`} data-cy="turnX" >X</div>
+        <div className={`px-2 py-1 ${turn === "O" ? 'bg-slate-500' : ''}`} data-cy="turnO">O</div>
       </div>
       <Board game={game} updateGame={updateGame} wonCondition={wonCondition} />
-      <div className='flex items-center justify-center gap-4 text-xl min-h-[30px]'>
+      <div className='flex items-center justify-center gap-4 text-xl min-h-[30px]' data-cy="winner">
         {winner && <div>{winner} Won the match</div>}
         {isDraw && <div>Match Draw</div>}
       </div>
