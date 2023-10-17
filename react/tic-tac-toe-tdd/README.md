@@ -1,8 +1,11 @@
-# React + Vite
+# Tic-Tac-Toe Test Driven Development
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Source Code
 
-Currently, two official plugins are available:
+* [E2E Testing](https://github.com/BLooDBRothER/thoughtworks-training/blob/main/react/tic-tac-toe-tdd/cypress/e2e/tic-tac-toe.cy.js)
+  
+* Component Testing
+  * [Game](https://github.com/BLooDBRothER/thoughtworks-training/blob/main/react/tic-tac-toe-tdd/src/components/game/Game.cy.jsx)
+  * [Board](https://github.com/BLooDBRothER/thoughtworks-training/blob/main/react/tic-tac-toe-tdd/src/components/board/Board.cy.jsx)
+  * [Square](https://github.com/BLooDBRothER/thoughtworks-training/blob/main/react/tic-tac-toe-tdd/src/components/square/Square.cy.jsx)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
