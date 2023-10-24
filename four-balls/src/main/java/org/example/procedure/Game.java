@@ -4,11 +4,10 @@ import processing.core.PApplet;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class Game extends PApplet {
-    public final int  SCREEN_WIDTH = 1000;
-    public final int  SCREEN_HEIGHT = 1000;
+    public final int SCREEN_WIDTH = 1000;
+    public final int SCREEN_HEIGHT = 1000;
     public final int TOTAL_BALLS = 4;
     public final int HEIGHT_RATIO = 5;
     public final int BALL_WIDTH = 20;
@@ -18,11 +17,11 @@ public class Game extends PApplet {
 
     public Game() {
         balls = new ArrayList<>();
-        for(int i = 1; i<=TOTAL_BALLS; i++) {
+        for (int ballNo = 1; ballNo <= TOTAL_BALLS; ballNo++) {
             HashMap<String, Integer> ball = new HashMap<>();
             ball.put("positionX", 0);
-            ball.put("positionY", (SCREEN_HEIGHT * i) / HEIGHT_RATIO);
-            ball.put("speed", i + 1);
+            ball.put("positionY", (SCREEN_HEIGHT * ballNo) / HEIGHT_RATIO);
+            ball.put("speed", ballNo);
             balls.add(ball);
         }
     }
@@ -39,8 +38,7 @@ public class Game extends PApplet {
 
     @Override
     public void draw() {
-        for(HashMap<String, Integer> ball: balls){
-            System.out.println(ball.get("positionX"));
+        for (HashMap<String, Integer> ball : balls) {
             ellipse(ball.get("positionX"), ball.get("positionY"), BALL_WIDTH, BALL_HEIGHT);
             int moveX = ball.get("positionX") + ball.get("speed");
             ball.put("positionX", moveX);
